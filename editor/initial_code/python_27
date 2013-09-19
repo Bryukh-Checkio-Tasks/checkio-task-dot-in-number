@@ -1,11 +1,14 @@
-def checkio(a, b):
+def checkio(text):
     """
-        sums two passed arguments
+    string with dot separated numbers, which inserted after every third digit from right to left
     """
-    return None
+    return text
 
 #These "asserts" using only for self-checking and not necessary for auto-testing
 if __name__ == '__main__':
-    assert checkio(3, 2) == 5
-    assert checkio(5, 7) == 12
-    print('Done')
+    assert checkio('123456') == '123.456', "1st example"
+    assert checkio('333') == '333', "2nd example"
+    assert checkio('9999999') == '9.999.999', "3rd example"
+    assert checkio('123456 567890') == '123.456 567.890', "4th example"
+    assert checkio('price is 5799') == 'price is 5.799', "5th example"
+    assert checkio('he was born in 1966th') == 'he was born in 1966th', "6th example"
