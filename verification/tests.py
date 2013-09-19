@@ -11,26 +11,48 @@ Each test is dict with
 TESTS = {
     "Basics": [
         {
-            "input": [3, 2],
-            "answer": 5,
-            "explanation": "3+2=?"
+            "input": "123456",
+            "answer": "123.456"
+        },
+
+        {
+            "input": "333",
+            "answer": "333"
         },
         {
-            "input": [5, 7],
-            "answer": 12,
-            "explanation": "5+7=?"
-        }
+            "input": "9999999",
+            "answer": "9.999.999"
+        },
+        {
+            "input": "123456 567890",
+            "answer": "123.456 567.890"
+        },
+        {
+            "input": "price is 5799",
+            "answer": "price is 5.799"
+        },
+        {
+            "input": "he was born in 1966th",
+            "answer": "he was born in 1966th"
+        },
+
     ],
     "Extra": [
         {
-            "input": [6, 3],
-            "answer": 9,
-            "explanation": "6+3=?"
+            "input": "122456",
+            "answer": "122.456"
         },
         {
-            "input": [6, 7],
-            "answer": 13,
-            "explanation": "6+7=?"
+            "input": "she was born in 2966th",
+            "answer": "she was born in 2966th"
+        },
+        {
+            "input": "It cost 44444 in 1980th",
+            "answer": "It cost 44.444 in 1980th"
+        },
+        {
+            "input": "3213442490979",
+            "answer": "3.213.442.490.979"
         }
     ]
 }
