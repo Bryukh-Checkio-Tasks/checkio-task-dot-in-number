@@ -43,6 +43,11 @@ TESTS = {
             "answer": "122.456"
         },
         {
+            "input": "1234 12345",
+            "answer": "1.234 12.345"
+        },
+
+        {
             "input": "she was born in 2966th",
             "answer": "she was born in 2966th"
         },
